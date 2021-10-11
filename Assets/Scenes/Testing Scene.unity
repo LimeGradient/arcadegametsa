@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 261.4644, g: 323.877, b: 428.7586, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &476602423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2801321698427508799, guid: c350edc87824bae4280f0ca88b4a426a, type: 3}
+  m_PrefabInstance: {fileID: 771615009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &476602428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476602423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 582adbd84082fdb4faf7cd4beb1ccd14, type: 2}
 --- !u!1001 &771615009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200,6 +222,7 @@ GameObject:
   - component: {fileID: 785437121}
   - component: {fileID: 785437120}
   - component: {fileID: 785437119}
+  - component: {fileID: 785437118}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -214,13 +237,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785437116}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.0049080416, y: -0.0031336127, z: 0.00025349128, w: 0.9999831}
   m_LocalPosition: {x: 0.52, y: 0, z: -0.01}
   m_LocalScale: {x: 0.30597708, y: 0.09188797, z: 0.30597708}
   m_Children: []
   m_Father: {fileID: 1774789110}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.562, y: -0.359, z: 0.031}
+--- !u!114 &785437118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785437116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8343411aec1b24da338e90de04c86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderTrigger: {fileID: 0}
+  highlightMaterial: {fileID: 2100000, guid: 09346f9195a288449b8b205609dc57ba, type: 2}
 --- !u!65 &785437119
 BoxCollider:
   m_ObjectHideFlags: 0
