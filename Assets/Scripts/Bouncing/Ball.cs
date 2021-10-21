@@ -16,7 +16,7 @@ public class Ball : MonoBehaviour {
   }
 
   public void OnCollisionEnter2D(Collision2D other) {
-    if (other.gameObject.layer == 10) { //layer
+    if (other.gameObject.layer == 10 || other.gameObject.layer == 1) { //layer
       Destroy(other.gameObject);
       score++;
     }
