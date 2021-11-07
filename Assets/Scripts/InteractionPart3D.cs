@@ -20,6 +20,7 @@ public class InteractionPart3D : MonoBehaviour {
 
     gameObject.layer = 9;
 
+    GameObject.Find("Player").GetComponent<MuseumController>().interactionParts.Add(this);
 
     List<Material> materials = new List<Material>();
     GetComponent<MeshRenderer>().GetMaterials(materials);
